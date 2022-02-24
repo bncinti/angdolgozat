@@ -1,0 +1,66 @@
+<html>
+<body class="content">
+    <h2>Regisztráció</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <br>
+          <input type="text" class="form-control" 
+          id="exampleInputEmail1" aria-describedby="emailHelp"
+          formControlName="mail">
+          
+    </div>
+    <div class="mb-3">
+          <label for="user" class="form-label">Felhasználónév</label>
+          <br>
+          <input type="text" class="form-control" 
+          id="user" aria-describedby="emailHelp"
+          formControlName="user">
+         
+    </div>
+    <div class="mb-3">            
+          <label for="exampleInputPassword1" class="form-label">Jelszó</label>
+          <br>
+          <input type="password" class="form-control" 
+          id="exampleInputPassword1"
+          formControlName="pass">
+          
+    </div>
+    <div class="mb-3">            
+          <label for="exampleInputPassword2" class="form-label">Jelszó megerősítése</label>
+          <br>
+          <input type="password" class="form-control" 
+          id="exampleInputPassword2"
+          formControlName="pass2">
+          
+    </div>
+    <button type="submit" class="btn btn-primary">Regisztráció</button>
+    </form>
+
+</body>
+
+</html>
+
+
+<style>
+
+
+    html {background: #F5FFFA;
+        background-size: cover;
+        background-attachment: fixed;
+        box-sizing: border-box;
+        background-size: auto; 
+
+    }
+    body {font-family: 'Times New Roman', Times, serif;
+          position: relative; left: 50%; margin-left: -200px;} 
+    input {width: 200px;
+            height: 30px;
+    }
+    
+   
+
+   
+    
+
+  </style>

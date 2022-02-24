@@ -1,0 +1,77 @@
+<html>
+<body>
+
+  <h2>Bejelentkezés</h2>
+ 
+
+<form [formGroup]="loginForm">
+    <div class="mb-3">
+
+      <label for="exampleInputname" class="form-label">Név:</label>
+      <br>
+      <input type="text" formControlName="name" class="form-control">
+      <br>
+
+      <label for="exampleInputEmail1" class="form-label">Email cím:</label>
+      <br>
+      <input type="email" class="form-control"
+      id="exampleInputEmail1" aria-describedby="emailHelp"
+      formControlName="email"
+      >
+        <br>
+      <span *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched">Az e-mail cím kötelező
+          
+      </span>
+
+      <br>
+       
+     
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Jelszó:</label>
+      <br>
+      <input type="password" class="form-control"
+      id="exampleInputPassword1"
+      formControlName="password"
+      >
+        <br>
+    
+    
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+  </form>
+
+</body>
+
+</html>
+
+  <style>
+    html {background: #F5FFFA;
+           background-attachment: fixed;
+          box-sizing: border-box;
+          background-size: auto;
+
+    }
+    body {font-family: 'Times New Roman', Times, serif;
+          position: relative; left: 50%; margin-left: -200px;}
+    input {width: 200px;
+            height: 30px;
+    }
+    button { position: fixed;
+
+
+    }
+   
+
+   
+    
+
+  </style>
+
+
+
